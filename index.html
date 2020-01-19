@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .first {
+        color: aqua;
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <div>node serve </div>
+    <div>响应页面</div>
+    <img src="./img/1.jpg" alt="马里奥">
+    <div class="first">首页面</div>
+    <button id='btn'>按钮</button>
+
+    <script>
+        var oDiv = document.getElementsByTagName('div')[1];
+        var oBtn = document.getElementById('btn');
+        oBtn.onclick = function () {
+            alert('按钮被点击');
+            oDiv.style.color = 'green';
+            oDiv.style.fontSize = '30px';
+        }
+    </script>
+</body>
+
+</html>
